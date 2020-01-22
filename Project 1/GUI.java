@@ -21,8 +21,29 @@ public class GUI extends JFrame {
 		JFrame frame = new JFrame("Infix Expression Evaluator");
 		frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		frame.setLocationRelativeTo(null); 
-		frame.setSize(400,225); 
+		frame.setSize(420,225); 
 		frame.setLayout(null); 
 		frame.setVisible(true);
+
+		JLabel first_Label = new JLabel("Enter Infix Expression");
+		first_Label.setBounds(20,20,1000,25);
+		frame.add(first_Label);
+
+		JTextField equation = new JTextField();
+		equation.setBounds(175,20,150,25);
+		frame.add(equation);
+
+		JButton evaluate = new JButton("Evaluate");
+		evaluate.setBounds(130,85,90,30);
+		frame.add(evaluate);
+
+		JLabel result = new JLabel("Result");
+		result.setBounds(40,120,50,50);
+		frame.add(result);
+
+		JTextField solution = new JTextField();
+		solution.setBounds(60,120,150,25);
+		frame.add(solution);
+
 	}
 }
