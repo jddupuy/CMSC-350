@@ -48,11 +48,16 @@ public class GUI extends JFrame {
 		evaluate.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e){
 				String a = equation.getText();
+				Infix(a);
 			}
 		});
 	}
 
-	class Infix{
+	public class Infix{
+
+		public void Infix(String a){
+			System.out.println(a);
+		}
 
 		//Is DivideByZero an exception, or am I going to have to creat a custom exception at this point for this lines below?
 		//JFrame divided_By_Zero = new JFrame();
