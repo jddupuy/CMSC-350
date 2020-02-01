@@ -47,17 +47,29 @@ public class GUI extends JFrame {
 		
 		evaluate.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e){
-				String a = equation.getText();
-				Infix(a);
+				String input = equation.getText();
+				Infix infix = new Infix(input);
 			}
 		});
 	}
 
 	public class Infix{
 
-		public void Infix(String a){
-			System.out.println(a);
-		}
+
+		/*class Operand_Stack {
+			private int data; 
+			private Node
+		}*/
+		String[] operator_Stack; 
+		
+
+
+		Infix(String input){
+			for (int i = 0; i < input.length();i++){
+				System.out.println(input.charAt(i));
+				
+			} 
+		} 
 
 		//Is DivideByZero an exception, or am I going to have to creat a custom exception at this point for this lines below?
 		//JFrame divided_By_Zero = new JFrame();
